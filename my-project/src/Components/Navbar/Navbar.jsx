@@ -26,6 +26,7 @@ const NavLinks = [
     },
 ]
 
+
 const Navbar = () => {
     const [showMenu, setShowMenu] = React.useState(false);
     const toggleMenu = () => setShowMenu(!showMenu);
