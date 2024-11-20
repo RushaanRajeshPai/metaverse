@@ -7,7 +7,7 @@ const Hero = () => {
         <div>
             <div className='py-12 sm:py-0 dark:bg-black dark:text-white duration-300 overflow-hidden'>
                 <div className="container min-h-[700px] flex-row">
-                    <div className="grid grid-cols-2 gap-6 place-items-center relative z-10">
+                    <div className="grid grid-cols-2 sm:grid-cols-2 gap-6 place-items-center relative z-10">
                         <div className="space-y-4 lg:py-20">
                             <h1 className='text-3xl font-semibold'>GET READY TO ENJOY VR <span className='bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary'>GAMES WITH OUR PLATFORM</span>
                             </h1>
@@ -19,9 +19,14 @@ const Hero = () => {
                             </div>
                         </div>
                         <div>
-                            <img src={hero} alt="VR experience" />
+                            <img src={hero} alt="" />
                         </div>
                     </div>
+
+                    {/* Animated Blob over the image */}
+                    <div className='h-[300px] w-[300px] bg-gradient-to-r from-primary to-secondary rounded-full absolute top-0 left-60 blur-3xl animated-wrapper'>
+                    </div>
+
                 </div>
             </div>
         </div>
